@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruf's Identity</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="images/home.jpeg" alt="Loading..." title="Maruf Raihan">
+        <h3> Maruf <span>Raihan</span> </h3>
+        <p>I am a <span class="typing-text"> Software Engineer </span> </p>
+        <a href="#about" class="btn">About</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <u>About</u> <span>Myself</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/about.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3> Hi there!<br> I'm <span> Maruf Raihan </span> </h3>
+            <p class="info">I'm a Software Engineer (Application Engineer)</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> age: </span> 20 </p>
+                    <p> <span> gender: </span> Male </p>
+                    <p> <span> experience  : </span> Not yet! </p>
+                    <p> <span> freelance : </span> Not available! </p>
+                </div>
+                <div class="box">
+                    <p> <span> language : </span> English/Bangla </p>
+                    <p> <span> phone : </span> +8801717210307 </p>
+                    <p> <span> email : </span> MRAIHANCSE201196@GMAIL.COM </p>
+                    <p> <span> address : </span> Dinajpur, Bangladesh </p>
+                </div>
+            </div>
+            <a href="#" class="btn">ABOVE</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> <span> my </span> services </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <i class="fas fa-code"></i>
+            <h3>web development</h3>
+            <p>Sometimes i am doing this.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Photography</h3>
+            <p>It's my hobby to click natural photos</p>
+        </div>
+
+
+     
+
+       
+
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/contact.png" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+                <input type="mailto:maruf.raihan.196@gmail.com" placeholder="E-mail">
+            </div>
+
+            <input type="text" placeholder="subject" class="box">
+
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="Send message">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> Developed by <span><a href="https://www.facebook.com/mraihan201196"><blink>Maruf Raihan</blink></a>  </span> | all rights reserved @2021 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['software engineer', 'web developer','Software Engineer','Web Developer'],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
